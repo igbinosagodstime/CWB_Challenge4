@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Inter">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>CWB Program | Stats preview card component</title>
+</head>
+<style>
+    body{
+        color: #F8F8F8;
+        position: relative;
+    }
+    .flex-container {
+        position:relative;
+        margin-top:100px;
+        display:flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center; 
+    }
+    .flex-item1{
+        background-image: linear-gradient(-110deg,#351450, #9356C3);
+        color:white;
+        align-items: center;
+        height: 200px;
+        width:450px;
+        padding: 0 30px;
+        align-content: center;
+        border-radius: 15px;
+     }
+    .flex-item2{
+        background-image: linear-gradient(to top right,#351450, #9356C3 );
+        color:white;
+        align-items: center;
+        background-color: #351450;   
+        padding: 0 30px;
+        height: 200px;
+        width:450px;
+        align-content: center;
+        border-radius: 15px;
+        position: relative;
+    }
+ h3.one {
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-top:30px;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: lighter;
+}
+h1{
+    color:hsl(0, 0%, 100%);
+    font-family: Inter;
+    margin:0 0;
+    margin-top: 6px;
+    font-size: 40px;
+
+}
+h3{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 20px;
+    font-family: Inter;
+    font-weight: lighter;
+}
+h3.stroke{
+    color:hsla(0, 0%, 100%, 0.75);color:hsla(0, 0%, 100%, 0.75);
+    text-decoration: line-through;
+    font-size: 20px;
+    margin:0 0;
+    margin-top: 5px;
+    font-family: Inter;
+    font-weight: lighter;
+}
+img.First{
+    padding-left: 285px;
+    position:absolute;
+    opacity: 0.3;
+    margin-top: 30px;
+    height:200px;
+    imag
+}
+img.second{
+    padding-left: 280px;
+    position:absolute;
+    opacity: 0.3;
+    rotate: -15deg;
+    margin-top: 60px;
+    height: 140px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="flex-item1">
+                <img src="images/wallet.svg" class="First">
+                <div><h3 style="text-align: center;" class="one">Available Balance</h3>
+                <h1 style="text-align: center;">&#8358;216,990</h1>
+                <h3 style="text-align: center;">Unavailable Balance</h3>
+                <h3 class="stroke" style="text-align: center;">&#8358;216,990</h3></div>
+            </div>
+            <div class="flex-item2">
+                <img src="images/wallet.svg" class="second">
+               <div> <h3 class="one">Active Balance</h3>
+                <h1>&#8358;216,990</h1>
+                <h3>Unavailable Balance</h3>
+                <h3 class="stroke">&#8358;216,990</h3></div>
+            </div>
+        </div>
+    </div>
+  
+
+
+</body>
+
+</html>
